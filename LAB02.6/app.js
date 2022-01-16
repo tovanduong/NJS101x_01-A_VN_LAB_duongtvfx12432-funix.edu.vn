@@ -1,4 +1,3 @@
-// const http = require('http')
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
@@ -19,6 +18,5 @@ app.post('/product', (req, res, next)=> {
 app.use('/', (req, res, next)=> {
     res.send('<h1>Hello from Express!</h1>')
 })
-// const server = http.createServer(app)
 
 app.listen(3000)
